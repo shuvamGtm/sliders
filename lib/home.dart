@@ -24,10 +24,16 @@ class Sliders extends StatelessWidget {
                     scrollDirection: Axis.horizontal,
                     child: Row(children: [
                       Container(
-                        height: 200,
-                        width: 200,
-                        color: Colors.yellow,
-                      ),
+                          height: 200,
+                          width: 200,
+                          color: Colors.yellow,
+                          child: Center(
+                            child: Text(
+                              "Scroll horizontal ",
+                              style: TextStyle(
+                                  fontSize: 20, fontWeight: FontWeight.bold),
+                            ),
+                          )),
                       Container(
                         height: 200,
                         width: 200,
@@ -46,9 +52,15 @@ class Sliders extends StatelessWidget {
                     scrollDirection: Axis.vertical,
                     child: Column(children: [
                       Container(
-                        height: 200,
-                        color: Colors.pink,
-                      ),
+                          height: 200,
+                          color: Colors.pink,
+                          child: Center(
+                            child: Text(
+                              "Scroll vertical ",
+                              style: TextStyle(
+                                  fontSize: 20, fontWeight: FontWeight.bold),
+                            ),
+                          )),
                       Container(
                         height: 200,
                         color: Colors.deepOrange,
@@ -66,10 +78,17 @@ class Sliders extends StatelessWidget {
                 width: 1000,
                 child: Row(children: [
                   Container(
-                    height: 1000,
-                    width: 500,
-                    color: Colors.green,
-                  ),
+                      height: 1000,
+                      width: 500,
+                      color: Colors.green,
+                      child: Align(
+                        alignment: Alignment.topCenter,
+                        child: Text(
+                          "Scroll horizontal & vertical ",
+                          style: TextStyle(
+                              fontSize: 20, fontWeight: FontWeight.bold),
+                        ),
+                      )),
                   Container(height: 1000, width: 500, color: Colors.brown)
                 ]),
               ),
